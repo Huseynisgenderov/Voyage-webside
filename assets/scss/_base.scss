@@ -1,0 +1,194 @@
+//Fonts
+@import url("https://use.typekit.net/ojh4bki.css");
+
+//Base
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  border-style: none;
+}
+body {
+  font-family: "muli", sans-serif;
+}
+.container {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+a {
+  transition: 0.3s all ease;
+}
+.row-content {
+  text-align: center;
+  margin-bottom: 48px;
+  padding-bottom: 48px;
+  h2 {
+    font-size: 30px;
+    font-weight: 600;
+    line-height: 1.5;
+    color: #000;
+  }
+}
+//Base end
+//Tour-card start
+.tour-card {
+  padding: 0 15px;
+  width: 100%;
+  .tour-img {
+    display: block;
+    height: 200px;
+    width: 200px;
+    margin: 0 auto;
+    margin-bottom: 24px;
+    border-radius: 50%;
+    box-shadow: 0px 10px 59px -27px black;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    img {
+      height: 200px;
+      border-radius: 50%;
+    }
+  }
+  .tour-info {
+    text-align: center;
+    h2,
+    h3 {
+      font-size: 20px;
+      line-height: 1.5;
+      color: #000;
+      font-family: inherit;
+    }
+    h3 {
+      font-weight: 400;
+      margin-bottom: 12px;
+      span {
+        font-size: 16px;
+        color: #cccccc;
+        margin-right: 5px;
+      }
+    }
+    h2 {
+      font-weight: 600;
+      margin-bottom: 12px;
+    }
+    a {
+      text-transform: uppercase;
+      font-size: 11px;
+      font-weight: 400;
+      letter-spacing: 1px;
+      color: #ff5f5f;
+    }
+  }
+}
+//Tour-card end
+//Services-card start
+.services-card {
+  padding: 0 15px;
+  margin-bottom: 40px;
+  position: relative;
+
+  .services-icon {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    i {
+      width: 120px;
+      height: 120px;
+      font-size: 60px;
+      margin-bottom: 16px;
+      color: #ff5f5f;
+    }
+  }
+  .services-text {
+    padding: 8px;
+    text-align: center;
+    h3 {
+      font-size: 20px;
+      line-height: 1.5;
+      color: #000;
+      font-weight: 400;
+      font-family: inherit;
+    }
+    p {
+      font-size: 16px;
+      line-height: 1.8;
+      font-weight: 300;
+      color: gray;
+    }
+  }
+}
+//Services-card end
+//otel-card start
+.otel-card {
+  overflow: hidden;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  width: 100%;
+  height: 400px;
+  display: flex;
+  align-items: flex-end;
+  cursor: pointer;
+  .otel-text {
+    width: 100%;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    padding: 20px 20px 10px 20px;
+    transition: 0.8s all ease;
+    color: #fff;
+    position: relative;
+    z-index: 1;
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      transform: scaleY(0);
+      transform-origin: bottom center;
+      background: #fff;
+      z-index: -1;
+      transition: transform 0.3s;
+    }
+    &:hover::after {
+      transform: scaleY(1);
+    }
+    &:hover {
+      color: #000;
+      .name {
+        color: #000;
+      }
+    }
+    h3 {
+      margin: 0 0 10px 0;
+      padding: 0;
+      font-size: 24px;
+      line-height: 1.2;
+      font-weight: 400;
+    }
+    .name {
+      line-height: 1.4;
+      color: #fff;
+      font-size: 14px;
+      display: inline-block;
+      margin-right: 10px;
+      margin-bottom: 10px;
+      opacity: 0.6;
+    }
+    p {
+      font-size: 12px;
+      margin-bottom: 1rem;
+    }
+  }
+}
+//otel-card-end
+

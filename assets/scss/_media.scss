@@ -1,0 +1,165 @@
+//Media
+//Container media
+@media (min-width: 576px) {
+  .container {
+    max-width: 540px;
+  }
+}
+@media (min-width: 768px) {
+  .container {
+    max-width: 720px;
+  }
+}
+@media (min-width: 992px) {
+  .container {
+    max-width: 960px;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1140px;
+  }
+}
+//container media end
+//Tour start
+@media (min-width: 576px) {
+  .img {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+  .text {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+}
+@media (min-width: 992px) {
+  .img {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+  .text {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+}
+@media (max-width: 991.5px) {
+  .img {
+    .play {
+      top: 87% !important;
+      bottom: 0;
+      left: 45%;
+      right: auto;
+    }
+  }
+}
+@media (max-width: 991.5px) {
+  .img {
+    height: 400px;
+  }
+}
+//Tour end
+//card media start
+@media (min-width: 768px) {
+  .tour-card,
+  .services-card{
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+  .most-popular-destination{
+    .otel-card {
+      flex: 0 0 25%;
+      max-width: 25%;
+    }
+  }
+}
+@media (min-width: 992px) {
+  .tour-card,
+  .services-card{
+    flex: 0 0 25%;
+    max-width: 25%;
+  }
+}
+//card media end
+//guest says media
+@media (max-width: 992px) {
+  .guest1 {
+    position: absolute;
+    visibility: hidden;
+    display: none;
+  }
+  .guest-card-list {
+    display: flex;
+    justify-content: center;
+  }
+  .guest3 {
+    position: absolute;
+    visibility: hidden;
+    display: none;
+  }
+}
+//guest car media end
+//recommented hotel media
+@media (min-width: 992px) {
+  .email-side {
+    flex: 0 0 33.3333%;
+    max-width: 33.3333%;
+  }
+  .otels-side {
+    flex: 0 0 66.66667%;
+    max-width: 66.66667%;
+  }
+}
+@media (min-width: 768px) {
+  .email-side {
+    padding: 48px;
+  }
+  .otels-side {
+    padding-left: 3rem;
+  }
+  .card-flex {
+    flex: 0 0 33.3333%;
+    max-width: 33.3333%;
+  }
+  .contact-information,
+  .send-message{
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+  .blog-card {
+    margin-bottom: 30px;
+  }
+  .footer-colum {
+    flex-basis: 0;
+    flex-grow: 1;
+    max-width: 100%;
+  }
+}
+//hotel-page-media
+@media (min-width: 992px) {
+  .hotel-page-section{
+    .otel-page-list {
+      flex: 0 0 66.66667%;
+      max-width: 66.66667%;
+      .otel-card-padding {
+        flex: 0 0 50% ;
+        max-width: 50% ;
+      }
+    }
+    .sidebar{
+      flex: 0 0 33.33333%;
+      max-width: 33.33333%;
+    }
+  }
+}
+@media (min-width: 768px) {
+  .otel-card-padding {
+    flex: 0 0 50% ;
+    max-width: 50% ;
+  }
+}
+//contact
+@media (max-width: 992px) {
+  .map{
+    height: 300px;
+  }
+}
