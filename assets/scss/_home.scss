@@ -51,6 +51,7 @@
     display: flex;
     flex-wrap: wrap;
     .img {
+      width: 100%;
       background-image: url(../image/cards/tour-page.webp);
       background-position: center center;
       background-repeat: no-repeat;
