@@ -243,7 +243,7 @@ a {
 }
 @media (min-width: 768px) {
   .tour-card,
-.services-card {
+  .services-card {
     flex: 0 0 50%;
     max-width: 50%;
   }
@@ -254,7 +254,7 @@ a {
 }
 @media (min-width: 992px) {
   .tour-card,
-.services-card {
+  .services-card {
     flex: 0 0 25%;
     max-width: 25%;
   }
@@ -297,7 +297,7 @@ a {
     max-width: 33.3333%;
   }
   .contact-information,
-.send-message {
+  .send-message {
     flex: 0 0 50%;
     max-width: 50%;
   }
@@ -514,6 +514,9 @@ a {
   flex-wrap: wrap;
   position: relative;
 }
+.tour-section .tour-card-list img {
+  object-fit: cover;
+}
 
 .our-services {
   padding: 112px 0;
@@ -535,6 +538,20 @@ a {
   height: auto;
   display: flex;
   flex-wrap: wrap;
+}
+
+.otel-card .overlay {
+  position: absolute;
+  z-index: 0;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  content: "overlay";
+  background-color: #000;
+  opacity: 0.2;
 }
 
 .otel-card:nth-child(1) {

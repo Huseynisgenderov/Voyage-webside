@@ -113,6 +113,9 @@
     display: flex;
     flex-wrap: wrap;
     position: relative;
+    img{
+      object-fit: cover;
+    }
   }
 }
 //tour-section end
@@ -138,6 +141,23 @@
   display: flex;
   flex-wrap: wrap;
 }
+.otel-card{
+  
+    .overlay {
+      position: absolute;
+      z-index: 0;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      content: "overlay";
+      background-color: #000;
+      opacity: 0.2;
+    }
+  
+}
 .otel-card:nth-child(1) {
   background-image: url(../image/cards/tour-page.webp);
 }
@@ -162,6 +182,7 @@
 .otel-card:nth-child(8) {
   background-image: url(../image/cards/otel-8.jpg);
 }
+
 //Most popular destination end
 //Guests says
 .guests-say {
