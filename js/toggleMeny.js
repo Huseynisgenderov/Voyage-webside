@@ -5,7 +5,7 @@ document.getElementById('toggle-btn').addEventListener('toggle', toggleMenu);
 function toggleMenu() {
   let navList = document.querySelector(".navList");
   if (!toggleStatus) {
-    navList.style.maxHeight = '500px';
+    navList.style.maxHeight = '800px';
     let navItems = document.querySelectorAll(".navItem");
     for (let i = 0; i < navItems.length; i++) {
       navItems[i].style.opacity = '1';
